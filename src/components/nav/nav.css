@@ -39,7 +39,7 @@
   color: var(--secondary-text);
 }
 
-.navbar.header-scrolled {
+.header-scrolled {
   position: fixed;
   top: 0;
   left: 0;
@@ -53,5 +53,15 @@
 @media (max-width: 1199.5px) {
   .header_wrapper .navbar-nav .nav-link {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-scrolled {
+    height: auto;
+  }
+
+  .header_wrapper .nav-item .nav-link {
+    margin-top: 0.9375rem;
   }
 }
