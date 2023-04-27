@@ -1,0 +1,39 @@
+.banner_wrapper {
+  background-image: url("../../images/backgroundHome.avif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.banner_wrapper p {
+  max-width: 80%;
+  color: var(--text-white);
+}
+
+.banner_wrapper .top-right-sec {
+  position: relative;
+  background-image: url("../../images/cloudbg.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.aimg1,
+.aimg2 {
+  width: 200px;
+}
+
+.aimg3 {
+  width: 350px;
+  position: relative;
+  bottom: 40px;
+}
+
+.homepageicons {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}
