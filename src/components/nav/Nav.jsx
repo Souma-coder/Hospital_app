@@ -6,18 +6,24 @@ import "./nav.css";
 const Nav = () => {
   const [fix, setFix] = useState(false);
 
-  function handleScroll() {
-    if (window.scrollY > 100) {
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
       setFix(true);
     } else {
       setFix(false);
     }
-  }
+  };
 
   window.addEventListener("scroll", handleScroll);
 
+  const handleHideNav = () => {
+    document
+      .querySelector(".navbar-collapse.collapse")
+      .classList.remove("show");
+  };
+
   return (
-    <header className="header_wrapper">
+    <header className="header_wrapper" id="nav">
       <nav
         className={
           fix
@@ -26,7 +32,7 @@ const Nav = () => {
         }
       >
         <div className="container-fluid">
-          <a className="navbar-brand logo_full" href="#">
+          <a className="navbar-brand logo_full" href="#nav">
             <img src={logo} alt="logo" className="img-fluid logo_img" />
             Doctor's meet
           </a>
@@ -47,42 +53,55 @@ const Nav = () => {
           >
             <ul className="navbar-nav menu-navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#home">
+                <a
+                  className="nav-link"
+                  aria-current="page"
+                  href="#nav"
+                  onClick={handleHideNav}
+                >
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about">
+                <a className="nav-link" href="#about" onClick={handleHideNav}>
                   About
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#services">
+                <a
+                  className="nav-link"
+                  href="#services"
+                  onClick={handleHideNav}
+                >
                   Services
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#team">
+                <a className="nav-link" href="#team" onClick={handleHideNav}>
                   Team
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#gallery">
+                <a className="nav-link" href="#gallery" onClick={handleHideNav}>
                   Gallery
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#testimonial">
+                <a
+                  className="nav-link"
+                  href="#testimonial"
+                  onClick={handleHideNav}
+                >
                   Testimonial
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#blog">
+                <a className="nav-link" href="#blog" onClick={handleHideNav}>
                   Blog
                 </a>
               </li>
               <li className="nav-item mt-3 mt-lg-0">
-                <a className="nav-link" href="#contact">
+                <a className="nav-link" href="#contact" onClick={handleHideNav}>
                   Contact
                 </a>
               </li>
