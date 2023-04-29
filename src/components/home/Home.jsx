@@ -47,7 +47,7 @@ const Home = () => {
       <div className="wrapper pb-0">
         <div className="container">
           <div className="row">
-            <div className="col-md-4 col-sm-6 mb-4">
+            <div className="col-md-4 col-sm-12 mb-4">
               <div className="card text-center">
                 <div className="icon-box">
                   <img
@@ -58,11 +58,13 @@ const Home = () => {
                 </div>
                 <div>
                   <h4>Easy Appointment</h4>
-                  <p>Book an appointment and feel the advance hospitality</p>
+                  <p className="text-center">
+                    Book an appointment and feel the advance hospitality
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="col-md-4 col-sm-6 mb-4">
+            <div className="col-md-4 col-sm-12 mb-4">
               <div className="card text-center">
                 <div className="icon-box">
                   <img
@@ -73,11 +75,13 @@ const Home = () => {
                 </div>
                 <div>
                   <h4>Emergengy Service</h4>
-                  <p>We will give you emergency services</p>
+                  <p className="text-center">
+                    We will give you emergency services
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="col-md-4 col-sm-6 mb-4">
+            <div className="col-md-4 col-sm-12 mb-4">
               <div className="card text-center">
                 <div className="icon-box">
                   <img
@@ -88,7 +92,9 @@ const Home = () => {
                 </div>
                 <div>
                   <h4>24 X 7 Service</h4>
-                  <p>We are always open 24*7 at your service</p>
+                  <p className="text-center">
+                    We are always open 24*7 at your service
+                  </p>
                 </div>
               </div>
             </div>
