@@ -3,6 +3,8 @@ import About from "./about/About";
 import Footer from "./footer/Footer";
 import Home from "./home/Home";
 import Nav from "./nav/Nav";
+import Services from "./services/Services";
+import Team from "./team/Team";
 import Testimonial from "./testimonial/Testimonial";
 
 const MainPage = () => {
@@ -11,6 +13,8 @@ const MainPage = () => {
       <Nav />
       <Home />
       <About />
+      <Services />
+      <Team />
       <Testimonial />
       <Footer />
     </>
