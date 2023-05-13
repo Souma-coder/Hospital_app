@@ -1,5 +1,6 @@
 import React from "react";
 import About from "./about/About";
+import Appointment from "./appointment/Appointment";
 import Footer from "./footer/Footer";
 import Gallery from "./gallery/Gallery";
 import Home from "./home/Home";
@@ -18,6 +19,7 @@ const MainPage = () => {
       <Team />
       <Gallery />
       <Testimonial />
+      <Appointment />
       <Footer />
     </>
   );
