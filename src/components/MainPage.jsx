@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./about/About";
 import Footer from "./footer/Footer";
+import Gallery from "./gallery/Gallery";
 import Home from "./home/Home";
 import Nav from "./nav/Nav";
 import Services from "./services/Services";
@@ -15,6 +16,7 @@ const MainPage = () => {
       <About />
       <Services />
       <Team />
+      <Gallery />
       <Testimonial />
       <Footer />
     </>
